@@ -1,110 +1,70 @@
-# budget-tracker-
-This project is an Expense Tracker Web Application built using the MERN stack (MongoDB, Express.js, React.js, Node.js)
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-1. Introduction
-In today’s fast-paced world, managing personal finances is crucial, yet often overlooked. Many individuals struggle to track their daily expenses, leading to poor budgeting and overspending. This project aims to address this issue through the development of a full-stack web-based Expense Tracker application using the MERN stack—MongoDB, Express.js, React.js, and Node.js.
+## Available Scripts
 
-The system provides users with a seamless interface to add, view, categorize, update, and delete financial transactions, thereby promoting healthy financial habits. It’s designed to be intuitive, responsive, and scalable, supporting a smooth user experience on both desktop and mobile devices.
+In the project directory, you can run:
 
-This document outlines the objectives, technologies, system design, and standout features of the application, demonstrating how modern web technologies can effectively solve everyday problems.
+### `npm start`
 
-2. Project Objectives
-The primary goal of this project is to develop a user-friendly and efficient expense tracking system that enables users to monitor their finances in real-time. The specific objectives include:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Facilitate Daily Tracking: Allow users to log income and expenses across customizable categories.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Improve Financial Visibility: Present detailed summaries of spending patterns and balances.
+### `npm test`
 
-Enable Real-time Data Updates: Synchronize data instantly between frontend and backend for a seamless experience.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Support CRUD Operations: Provide Create, Read, Update, and Delete functionalities for all transactions.
+### `npm run build`
 
-Ensure Responsive Design: Make the application fully usable on all screen sizes, enhancing accessibility.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-By fulfilling these objectives, the application empowers users to gain better control over their personal finances.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-3. Technologies Used
-This project leverages the power and flexibility of the MERN stack, which includes:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-MongoDB: A NoSQL document-oriented database used to store user data, including expenses, incomes, and categories.
+### `npm run eject`
 
-Express.js: A lightweight web application framework that simplifies routing and middleware handling on the server side.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-React.js: A powerful JavaScript library for building dynamic and interactive user interfaces.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Node.js: A runtime environment that executes JavaScript code on the server, acting as a bridge between frontend and database.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Axios / Fetch API: Enables seamless HTTP communication between frontend and backend components.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Tailwind CSS: A utility-first CSS framework used for crafting a clean, responsive UI.
+## Learn More
 
-Mongoose: An Object Data Modeling (ODM) library for MongoDB, used for schema definition and data validation.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-This stack ensures that the application is fast, modern, and capable of handling real-world use cases efficiently.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-4. Key Features
-The application is designed with several core features that enhance its utility and user-friendliness:
+### Code Splitting
 
-4.1. User Interface
-Clean, minimal, and responsive design.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Interactive dashboards that provide insights into expense distribution.
+### Analyzing the Bundle Size
 
-Toggle themes and dynamic updates using React hooks and states.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-4.2. Expense Management
-Users can add detailed transactions with descriptions, amounts, and timestamps.
+### Making a Progressive Web App
 
-Categorization of expenses (e.g., Food, Travel, Shopping, Rent).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-Sorting and filtering features for better data navigation.
+### Advanced Configuration
 
-4.3. Real-time Operations
-All data operations (add, edit, delete) reflect instantly on the UI.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-Backend API built with Express handles logic securely and efficiently.
+### Deployment
 
-React state management ensures a responsive experience.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-4.4. Data Visualization
-Monthly and category-wise breakdown of expenses.
+### `npm run build` fails to minify
 
-Pie and bar charts for visual financial analysis (optional integration).
-
-4.5. Security and Performance
-Data validations implemented with Mongoose schemas.
-
-Modular and clean codebase for scalability and maintainability.
-
-Prepared for JWT-based authentication (can be added for multi-user support).
-
-5. System Architecture
-The architecture follows a client-server model:
-
-Client (Frontend):
-
-Built using React with modular components.
-
-Fetches and displays transaction data via RESTful APIs.
-
-Handles user input and updates the state dynamically.
-
-Server (Backend):
-
-Node.js + Express application with modular route handling.
-
-Connects to MongoDB for data persistence.
-
-Uses Mongoose for object modeling and schema enforcement.
-
-Database:
-
-MongoDB collection stores transaction data in JSON-like documents.
-
-Indexed by timestamps and categories for efficient queries.
-
-6. Conclusion
-This Expense Tracker application is a practical example of how full-stack development can be used to build robust, interactive, and real-world applications. By integrating MongoDB, Express, React, and Node.js, the system achieves a balanced and scalable architecture capable of supporting both individual and enterprise use cases with further customization.
-
-The application not only fulfills its goal of simplifying expense management but also demonstrates modern development practices, including modular code organization, responsive design, and real-time user interactions.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
